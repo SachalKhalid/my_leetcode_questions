@@ -4,7 +4,6 @@ class Solution:
         for val in nums:
             array[val] = val
         
-        for val in range(len(array)):
-            if array[val] == -1:
-                return val
-        return 0
+        for val in array:
+            if val == -1:
+                return array.index(val)
